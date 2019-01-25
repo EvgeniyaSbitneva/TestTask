@@ -1,0 +1,60 @@
+.menu {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+
+	border-bottom: 2px solid $border-color;
+
+	.menu__list {
+		&--submenu {
+			padding: 12px;
+
+			.menu__link {
+				font-size: 0.9em;
+				color: $text-color;
+			}
+
+			.menu__item {
+				border: none;
+			}
+		}
+	}
+
+	&__item {
+		padding: 0.7em 0 0.8em;
+		border-bottom: 1px solid $border-color;	
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 100%;
+
+		font-family: "Roboto Slab", "Times New Roman", serif;
+		color: $heading-color;
+		text-transform: uppercase;
+
+		&--submenu {
+			position: relative;
+		}
+	}
+
+	&__arr {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 12px;
+		height: 17px;
+
+		color: $text-color;
+
+		transform: translateY(-50%);
+		transition: 0.2s;
+
+		&.active {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+}

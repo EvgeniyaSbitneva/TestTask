@@ -1,0 +1,56 @@
+.contacts {
+	&__list {
+		margin-bottom: 3.5em;
+		padding-bottom: 3.5em;
+
+		border-bottom: 2px solid $border-color;
+	}
+
+	&__item {
+		position: relative;
+		padding: 0.8em 0 0.8em 40px;
+
+		border-bottom: 1px solid $border-color;
+
+		&:last-of-type {
+			border: none;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.8em;
+			left: 0;
+
+			width: 22px;
+			height: 18px;
+
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+
+		&--mail {
+
+			a {
+				border-bottom: 1px dotted;
+			}
+
+			&::before {
+				background-image: url(/img/envelope-regular.svg);
+			}
+		}
+
+		&--tel {
+			&::before {
+				background-image: url(/img/phone-receiver.svg);
+			}
+		}
+
+		&--address {
+			&::before {
+				background-image: url(/img/home-solid.svg);
+			}
+		}
+	}
+}

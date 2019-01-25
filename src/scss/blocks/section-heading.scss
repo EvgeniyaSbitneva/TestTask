@@ -1,0 +1,12 @@
+.section-heading {
+	display: inline-block;
+	margin-bottom: 2em;
+	padding: 0 0.75em 0.5em 0;
+	font-size: 1.5em;
+
+	border-bottom: 3px solid $main-red;
+}
+
+@media (min-width: $tablet) {
+	font-size: 1.75em;
+}

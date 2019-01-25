@@ -1,0 +1,36 @@
+.page-header {
+	
+	margin-bottom: 40px;
+	padding: 90px 2em 0;
+
+	@media (min-width: $tablet-portrait) {
+		padding: 0 4em;
+	}
+
+	@media (min-width: $desktop) {
+		padding-left: 350px;
+		padding-right: 60px;
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: baseline;
+		border-bottom: 3px solid $main-red;
+		padding-bottom: 14px;
+	}
+
+	&__heading {
+		margin-bottom: 0;
+	}
+
+	&__social {
+		position: absolute;
+		top: 30px;
+		right: 10px;
+
+		@media (min-width: $tablet-portrait) {
+			position: static;
+			margin-left: auto;
+		}
+	}
+}

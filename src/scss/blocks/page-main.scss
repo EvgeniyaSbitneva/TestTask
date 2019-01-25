@@ -1,0 +1,28 @@
+.page-main {
+	padding: 0 2em;
+
+	&__section {
+		padding: 3em 0 1em 0;
+		border-bottom: 2px solid $border-color;
+	}
+
+	@media (min-width: $tablet-portrait) {
+		padding: 0 4em;
+
+		&__section {
+			padding: 4em 0 2em 0;
+		}
+	}
+
+	@media (min-width: $desktop) {
+		padding-left: 350px;
+		padding-right: 60px;
+	}
+
+	@media (min-width: $extra-large) {
+
+		&__section {
+			padding: 5em 0 3em 0;
+		}
+	}
+}

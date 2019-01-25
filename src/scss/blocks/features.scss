@@ -1,0 +1,94 @@
+.features {
+	&__list {
+		@media (min-width: $tablet) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding-top: 100px;
+		margin-bottom: 40px;
+
+		@media (min-width: 480px) {
+			display: flex;
+			align-items: center;
+			padding-top: 0;
+			padding-left: 140px;
+		}
+
+		&:nth-child(2n-1) {
+			@media (min-width: $tablet) {
+				margin-right: 2%;
+			}
+		}
+
+		@media (min-width: $tablet) {
+			width: 48%;
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			width: 50px;
+			height: 50px;
+
+			@media (min-width: 480px) {
+				top: 50%;
+				left: 20px;
+				width: 75px;
+				height: 75px;
+			}
+		}
+
+		&::before {
+			border: 2px solid $border-color;
+			border-radius: 0.375em;
+			transform: rotate(45deg);
+
+			@media (min-width: 480px) {
+				transform: translateY(-50%) rotate(45deg);
+			}
+		}
+
+		&::after {
+
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 50%;
+
+			@media (min-width: 480px) {
+				transform: translateY(-45%);
+			}
+		}
+
+		&--gem {
+			&::after {
+				background-image: url(/img/gem-regular.svg);
+			}
+			
+		}
+		&--plane {
+			&::after {
+				background-image: url(/img/paper-plane-solid.svg);
+			}
+			
+		}
+		&--rocket {
+			&::after {
+				background-image: url(/img/small-rocket-ship-silhouette.svg);
+			}
+			
+		}
+		&--signal {
+			&::after {
+				background-image: url(/img/signal-bars.svg);
+			}
+			
+		}
+	}
+}

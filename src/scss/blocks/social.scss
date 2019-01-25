@@ -1,0 +1,7 @@
+.social {
+	display: flex;
+
+	&__item:not(:last-of-type) {
+		margin-right: 1em;
+	}
+}
