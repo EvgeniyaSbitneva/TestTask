@@ -4,4 +4,13 @@
 	&__item:not(:last-of-type) {
 		margin-right: 1em;
 	}
+
+	@media (min-width: $desktop) {
+		&__link {
+			svg {
+				height: 19px;
+				width: auto;
+			}
+		}
+	}
 }

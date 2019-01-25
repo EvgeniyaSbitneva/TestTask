@@ -1,9 +1,15 @@
 .page-main {
 	padding: 0 2em;
+	transition: 0.3s;
+
 
 	&__section {
 		padding: 3em 0 1em 0;
 		border-bottom: 2px solid $border-color;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
 	}
 
 	@media (min-width: $tablet-portrait) {
@@ -17,6 +23,10 @@
 	@media (min-width: $desktop) {
 		padding-left: 350px;
 		padding-right: 60px;
+
+		&.full {
+			padding-left: 60px;
+		}
 	}
 
 	@media (min-width: $extra-large) {

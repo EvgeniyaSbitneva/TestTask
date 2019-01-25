@@ -6,7 +6,12 @@
 
 	.menu__list {
 		&--submenu {
+			display: none;
 			padding: 12px;
+
+			&.active {
+				display: block;
+			}
 
 			.menu__link {
 				font-size: 0.9em;
@@ -55,6 +60,7 @@
 
 		&.active {
 			transform: translateY(-50%) rotate(180deg);
+			color: $main-red;
 		}
 	}
 }

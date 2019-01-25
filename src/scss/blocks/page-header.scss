@@ -3,13 +3,19 @@
 	margin-bottom: 40px;
 	padding: 90px 2em 0;
 
+	transition: 0.3s;
+
 	@media (min-width: $tablet-portrait) {
-		padding: 0 4em;
+		padding: 6em 4em 0;
 	}
 
 	@media (min-width: $desktop) {
 		padding-left: 350px;
 		padding-right: 60px;
+
+		&.full {
+			padding-left: 60px;
+		}
 	}
 
 	&__wrap {

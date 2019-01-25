@@ -4,21 +4,20 @@
 	left: 0;
 	width: 360px;
 	height: 100%;
+	margin-left: -290px;
 	
 	z-index: 1000;
 
 	transition: 0.3s;
 
 	@media (min-width: $desktop) {
+		// position: static;
+	}
+
+	&.active {
 		position: absolute;
 		margin-left: 0;
 		height: auto;
-	}
-	
-	margin-left: -290px;
-
-	&.active {
-		margin-left: 0;
 	}
 	
 	&__wrap {
