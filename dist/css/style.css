@@ -51,9 +51,6 @@ body {
 main {
   display: block; }
 
-a {
-  text-decoration: none; }
-
 body, input, select, textarea {
   font-weight: normal;
   font-size: 14px;
@@ -67,6 +64,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", "Times New Roman", serif;
   line-height: 1.5;
   color: #3d4449; }
+
+p {
+  margin: 0 0 2em 0; }
+
+a {
+  text-decoration: none;
+  color: #7f888f;
+  transition: color 0.2s; }
+
+a:hover,
+a:focus {
+  color: #f56a6a; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,

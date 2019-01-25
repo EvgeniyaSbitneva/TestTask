@@ -17,10 +17,6 @@ main {
 //   height: auto;
 // }
 
-a {
-  text-decoration: none;
-}
-
 body, input, select, textarea {
   font-weight: normal;
   font-size: 14px;
@@ -36,6 +32,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", "Times New Roman", serif;
   line-height: 1.5;
   color: $heading-color;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: $main-red;
 }
 
 .visually-hidden:not(:focus):not(:active),
