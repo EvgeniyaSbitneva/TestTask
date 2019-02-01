@@ -11,13 +11,12 @@
 	transition: 0.3s;
 
 	@media (min-width: $desktop) {
-		// position: static;
+		position: absolute;
+		bottom: 0;
 	}
 
 	&.active {
-		position: absolute;
 		margin-left: 0;
-		height: auto;
 	}
 	
 	&__wrap {
@@ -31,6 +30,9 @@
 		overflow: scroll;
 
 		@media (min-width: $desktop) {
+			position: sticky;
+			top: 0;
+			height: auto;
 			overflow: visible;
 		}
 	}

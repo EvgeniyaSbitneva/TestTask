@@ -47,6 +47,7 @@ img {
   max-width: 100%; }
 
 body {
+  position: relative;
   min-width: 360px;
   margin: 0;
   padding: 0; }
@@ -235,10 +236,12 @@ input[type="radio"].visually-hidden {
   margin-left: -290px;
   z-index: 1000;
   transition: 0.3s; }
+  @media (min-width: 1279px) {
+    .sidebar {
+      position: absolute;
+      bottom: 0; } }
   .sidebar.active {
-    position: absolute;
-    margin-left: 0;
-    height: auto; }
+    margin-left: 0; }
   .sidebar__wrap {
     width: 290px;
     height: 100%;
@@ -249,6 +252,10 @@ input[type="radio"].visually-hidden {
     overflow: scroll; }
     @media (min-width: 1279px) {
       .sidebar__wrap {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: auto;
         overflow: visible; } }
   .sidebar__search {
     background-color: #eff1f2;
